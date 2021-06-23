@@ -1,3 +1,8 @@
+---
+title: The repo readme file.
+nav_exclude: true
+---
+
 ## Welcome to GitHub Pages
 
 🚀 🐼
