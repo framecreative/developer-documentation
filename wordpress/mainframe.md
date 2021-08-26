@@ -1,5 +1,5 @@
 ---
-title: MainFrame - WordPress Docs
+title: MainFrame
 parent: WordPress Docs
 order: 2
 ---

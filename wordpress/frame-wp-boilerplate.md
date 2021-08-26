@@ -1,5 +1,5 @@
 ---
-title: Frame WP Boilerplate - WordPress Docs
+title: Frame WP Boilerplate
 parent: WordPress Docs
 order: 1
 ---

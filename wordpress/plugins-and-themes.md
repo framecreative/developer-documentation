@@ -1,5 +1,5 @@
 ---
-title: Plugins and Themes - WordPress Docs
+title: Plugins and Themes
 parent: WordPress Docs
 order: 0
 ---
