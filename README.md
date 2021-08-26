@@ -7,7 +7,7 @@ nav_exclude: true
 
 🚀 🐼
 
-yes
+We can now use the new superpowered editor in github.dev
 
 You can use the [editor on GitHub](https://github.com/pmarsceill/test-jtd/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
