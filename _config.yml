@@ -2,5 +2,6 @@ title: "Frame Dev Docs"
 remote_theme: pmarsceill/just-the-docs
 color_scheme: "light"
 search_enabled: true
+logo: "/assets/images/Frame-wordmark-red.png"
 
 exclude: ['./README.md']
