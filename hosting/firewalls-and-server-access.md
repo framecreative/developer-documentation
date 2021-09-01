@@ -1,5 +1,5 @@
 ---
-title: Firewalls, WAFs, Server Access
+title: Server Access & Firewalls
 parent: Hosting
 order: 1
 ---
