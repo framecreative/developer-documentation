@@ -3,14 +3,16 @@ title: Server Access & Firewalls
 parent: Hosting
 order: 1
 ---
-# Firewalls and Server Access
+# Firewalls and Server Access #
+
 Frame servers and applications typically have between 1-3 levels of protection applied to them. Understanding these levels of protection can be important for configuration, along with troubleshooting blocked access.
 
-## Web Application Firewalls
+## Web Application Firewalls ##
 
 Cloudflare can do some filtering and blocking at the CDN / DNS level. Typically this doesn't show up much, but checking if the domain in questions is under cloudflare is useful when troubleshooting wierd connection behaviour. We can bypass Cloudflare using the setting on the DNS page. It's also worth checking for Page Rules as a cause of wierd behaviour.
 
-## Data Centre Level Firewall
+## Data Centre Level Firewall ##
+
 Vultr servers have access to Vultr's firewall. Our typical web server is within the Web Server firwall group - this blocks all incoming connections / ports with the exception of the following
  - `port 80` For http based web connections
  - `port 443` for https based web connections
@@ -18,14 +20,15 @@ Vultr servers have access to Vultr's firewall. Our typical web server is within 
 
  If you're trying to access the server via a non-standard port or protocal, this could be reason the connection is failing.
 
- ## Fail2Ban Server Level Firewall
+ ## Fail2Ban Server Level Firewall ##
+
  All ServerPilot configured servers come with Fail2Ban installed by default. We do not configure specific rules within this service, so typically any entries within F2B come from blocked SSH connections. If you make too many unsuccessful attempts at connecting via SSH, the IP will be temporarily banned. This will usually reset within 15 minutes. 
 
 If you need to regain immediate access, please see the troubleshooting below.
 
-## Troubleshooting
+## Troubleshooting ##
 
-### Removing Fail2Ban SSH / IP Tables IP lockouts
+### Removing Fail2Ban SSH / IP Tables IP lockouts ###
 
 If you enter the wrong credentials too many times, or try to login with a username that doesn't exist, the serverpilot Frame servers will generally add you to a Fail2Ban block list for around 15 minutes - more repeated attempts will extend the block or get the IP you're trying to access the server from permanently banned.
 
