@@ -20,7 +20,8 @@ Vultr servers have access to Vultr's firewall. Our typical web server is within 
 
  If you're trying to access the server via a non-standard port or protocal, this could be reason the connection is failing.
 
- ## Fail2Ban Server Level Firewall ##
+
+ ## Fail 2 Ban Server Level Firewall ##
 
  All ServerPilot configured servers come with Fail2Ban installed by default. We do not configure specific rules within this service, so typically any entries within F2B come from blocked SSH connections. If you make too many unsuccessful attempts at connecting via SSH, the IP will be temporarily banned. This will usually reset within 15 minutes. 
 
